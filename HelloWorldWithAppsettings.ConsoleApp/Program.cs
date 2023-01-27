@@ -1,10 +1,11 @@
-﻿namespace HelloWorldWithAppsettings.ConsoleApp;
+﻿using Microsoft.Extensions.Hosting;
+
+namespace HelloWorldWithAppsettings.ConsoleApp;
 
 internal class Program
 {
     private static void Main()
     {
-        Console.WriteLine("Hello, World!");
-        Console.ReadKey();
+        IHost host = Host.CreateDefaultBuilder().Build();
     }
 }
