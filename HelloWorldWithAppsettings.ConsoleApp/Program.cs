@@ -1,10 +1,10 @@
-﻿namespace HelloWorldWithAppsettings.ConsoleApp
+﻿namespace HelloWorldWithAppsettings.ConsoleApp;
+
+internal class Program
 {
-    internal class Program
+    private static void Main()
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello, World!"); 
-        }
+        Console.WriteLine("Hello, World!");
+        Console.ReadKey();
     }
 }
